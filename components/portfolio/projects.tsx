@@ -67,7 +67,7 @@ const projects = [
   },
   {
     title: "FLIBBER.WEB",
-    description: "Flibber&apos;s Slotting Mechanism is a system that enables predictable and controlled movement of value between different blockchains, traditional currencies, and digital markets.",
+    description: "Flibber's Slotting Mechanism is a system that enables predictable and controlled movement of value between different blockchains, traditional currencies, and digital markets.",
     image: Flibber,
     technologies: ["Solidity", "Next.js", "Supabase", "Web3modal"],
     status: "LIVE",
