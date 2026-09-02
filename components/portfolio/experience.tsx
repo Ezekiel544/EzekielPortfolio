@@ -34,12 +34,12 @@ const experiences = [
     technologies: ["React", "Tailwindcss", "Github", "Node.js", "Express.js", "MongoDB"],
   },
   {
-    title: "FrontEnd Developer",
+    title: "CTO and Fullstack Developer",
     company: "Flibber",
     location: "Remote",
     period: "Jan, 2025 - Present",
     description:
-      "Leading the development of user-facing web applications at Flibber, building responsive and high-performance interfaces with React.js and Tailwind CSS. Creating reusable and scalable UI components while ensuring a seamless user experience across devices. Collaborating closely with designers and product managers to translate designs into functional interfaces, while reviewing code and mentoring junior developers to maintain code quality and consistency.",
+      "Leading the development of user-facing web applications at Flibber, building responsive and high-performance interfaces with Next.js,Tailwind CSS, solidity and many more. Creating reusable and scalable UI components while ensuring a seamless user experience across devices. Collaborating closely with designers and product managers to translate designs into functional interfaces, while reviewing code and mentoring junior developers to maintain code quality and consistency.",
     technologies: ["NextJS", "TypeScript", "Firebase", "Github Actions"],
   },
   {

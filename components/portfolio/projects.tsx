@@ -10,8 +10,20 @@ import Piptracker from '../img/piptracker.png'
 import Vetpredict from '../img/vetpredict.png'
 import Tokicard from '../img/tokicard.png'
 import Covapadi from '../img/covapadi.png'
+import Phexara from '../img/phexara.png'
+import Flibber from '../img/flibber.png'
 import Max from '../img/max.jpg'
 const projects = [
+   {
+    title: "PHEXARA.WEB",
+    description:
+      "PHEXARA is a technology company that builds AI-powered software, cybersecurity solutions, and smart digital infrastructure to help organizations grow, adapt, and stay secure.",
+    image: Phexara,
+    technologies: ["Next.js", "PostgreSQL", "Tailwind"],
+    status: "LIVE",
+    github: "https://phexara.co.uk",
+    demo: "https://phexara.co.uk",
+  },
   {
     title: "PIP TRACKER.WEB",
     description:
@@ -21,6 +33,16 @@ const projects = [
     status: "LIVE",
     github: "https://github.com/Ezekiel544/Pip-tracker",
     demo: "https://pip-tracker-p.vercel.app",
+  },
+   {
+    title: "COVAPADI.WEB",
+    description:
+      "A gadget protection platform that partners with licensed insurance companies to provide users with simple, accessible, and user-friendly device protection services.",
+    image: Covapadi,
+    technologies: ["React.js", "EmailJS", "Tailwind", "Redux"],
+    status: "DEVELOPMENT",
+    github: "https://covapadi.vercel.app",
+    demo: "https://covapadi.vercel.app",
   },
   {
     title: "Vetpredict.WEB",
@@ -33,15 +55,6 @@ const projects = [
     demo: "https://vetpredict-frontend.vercel.app",
   },
   {
-    title: "MAX.BOT",
-    description: "A Telegram-based tap-to-earn bot built on the WAX blockchain, allowing users to earn rewards through interactive gameplay mechanics.",
-    image: Max,
-    technologies: ["Python", "Telegram Bot API", "Firebase","Webhooks"],
-    status: "LIVE",
-    github: "https://github.com/Ezekiel544/tgbot.git",
-    demo: "@firthtum_bot",
-  },
-  {
     title: "Tokicard.APP",
     description:
       "A  virtual dollar card used and managed through an app. It allows users to make online purchases, track spending, and manage their finances with ease.",
@@ -51,26 +64,27 @@ const projects = [
     github: "https://tokicardai.com",
     demo: "https://tokicardai.com",
   },
-  {
-    title: "COVAPADI.WEB",
-    description:
-      "A gadget protection platform that partners with licensed insurance companies to provide users with simple, accessible, and user-friendly device protection services.",
-    image: Covapadi,
-    technologies: ["React.js", "EmailJS", "Tailwind", "Redux"],
-    status: "DEVELOPMENT",
-    github: "https://www.covapadi.com",
-    demo: "https://www.covapadi.com",
-  },
-  {
-    title: "CRYPTO-TRACKER.WEB",
-    description:
-      "Real-time cryptocurrency tracking dashboard with portfolio management and price alerts.",
-    image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=600&h=400&fit=crop",
-    technologies: ["Next.js", "Chart.js", "CoinGecko API", "Tailwind"],
+   {
+    title: "FLIBBER.WEB",
+    description: "Flibber’s Slotting Mechanism is a system that enables predictable and controlled movement of value between different blockchains, traditional currencies, and digital markets.",
+    image: Flibber,
+    technologies: ["Solidity", "Next.js", "Supabase","Web3modal"],
     status: "LIVE",
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://flibber.xyz/",
+    demo: "https://flibber.xyz/",
   },
+  {
+    title: "MAX.BOT",
+    description: "A Telegram-based tap-to-earn bot built on the WAX blockchain, allowing users to earn rewards through interactive gameplay mechanics.",
+    image: Max,
+    technologies: ["Python", "Telegram Bot API", "Firebase","Webhooks"],
+    status: "LIVE",
+    github: "https://github.com/Ezekiel544/tgbot.git",
+    demo: "@firthtum_bot",
+  },
+ 
+ 
+ 
 ]
 
 const statusColors: Record<string, string> = {
