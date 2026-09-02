@@ -85,7 +85,7 @@ export function Experience() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {/* Section Title */}
+          {/* Section Title here*/}
           <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="font-mono font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 sm:mb-4">
               {/* EXPERIENCE<span className="text-accent">.</span>LOG */}
