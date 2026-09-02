@@ -13,8 +13,9 @@ import Covapadi from '../img/covapadi.png'
 import Phexara from '../img/phexara.png'
 import Flibber from '../img/flibber.png'
 import Max from '../img/max.jpg'
+
 const projects = [
-   {
+  {
     title: "PHEXARA.WEB",
     description:
       "PHEXARA is a technology company that builds AI-powered software, cybersecurity solutions, and smart digital infrastructure to help organizations grow, adapt, and stay secure.",
@@ -34,7 +35,7 @@ const projects = [
     github: "https://github.com/Ezekiel544/Pip-tracker",
     demo: "https://pip-tracker-p.vercel.app",
   },
-   {
+  {
     title: "COVAPADI.WEB",
     description:
       "A gadget protection platform that partners with licensed insurance companies to provide users with simple, accessible, and user-friendly device protection services.",
@@ -47,7 +48,7 @@ const projects = [
   {
     title: "Vetpredict.WEB",
     description:
-      "the first prediction market platform on the VeChain blockchain. Designed and built a decentralized application enabling users to create and participate in prediction markets.",
+      "The first prediction market platform on the VeChain blockchain. Designed and built a decentralized application enabling users to create and participate in prediction markets.",
     image: Vetpredict,
     technologies: ["Next.js", "Express.js", "Tailwind", "solidity"],
     status: "LIVE",
@@ -57,18 +58,18 @@ const projects = [
   {
     title: "Tokicard.APP",
     description:
-      "A  virtual dollar card used and managed through an app. It allows users to make online purchases, track spending, and manage their finances with ease.",
+      "A virtual dollar card used and managed through an app. It allows users to make online purchases, track spending, and manage their finances with ease.",
     image: Tokicard,
     technologies: ["React", "TailwindCSS"],
     status: "BETA",
     github: "https://tokicardai.com",
     demo: "https://tokicardai.com",
   },
-   {
+  {
     title: "FLIBBER.WEB",
-    description: "Flibber’s Slotting Mechanism is a system that enables predictable and controlled movement of value between different blockchains, traditional currencies, and digital markets.",
+    description: "Flibber&apos;s Slotting Mechanism is a system that enables predictable and controlled movement of value between different blockchains, traditional currencies, and digital markets.",
     image: Flibber,
-    technologies: ["Solidity", "Next.js", "Supabase","Web3modal"],
+    technologies: ["Solidity", "Next.js", "Supabase", "Web3modal"],
     status: "LIVE",
     github: "https://flibber.xyz/",
     demo: "https://flibber.xyz/",
@@ -77,14 +78,11 @@ const projects = [
     title: "MAX.BOT",
     description: "A Telegram-based tap-to-earn bot built on the WAX blockchain, allowing users to earn rewards through interactive gameplay mechanics.",
     image: Max,
-    technologies: ["Python", "Telegram Bot API", "Firebase","Webhooks"],
+    technologies: ["Python", "Telegram Bot API", "Firebase", "Webhooks"],
     status: "LIVE",
     github: "https://github.com/Ezekiel544/tgbot.git",
-    demo: "@firthtum_bot",
+    demo: "https://t.me/firthtum_bot",
   },
- 
- 
- 
 ]
 
 const statusColors: Record<string, string> = {
@@ -133,8 +131,7 @@ export function Projects() {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12">
             <h2 className="font-mono font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 sm:mb-4">
-              {/* PROJECTS<span className="text-accent">.</span>DIR */}
-                 Selected Work
+              Selected Work
             </h2>
             <div className="w-12 sm:w-16 h-1 bg-accent mx-auto mb-6 sm:mb-8" />
             <p className="font-mono text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed px-2">
