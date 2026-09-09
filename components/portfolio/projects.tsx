@@ -26,16 +26,16 @@ const projects = [
     demo: "https://phexara.co.uk",
   },
   {
-    title: "PIP TRACKER.WEB",
+    title: "Tokicard.APP",
     description:
-      "A powerful trading analytics platform designed to help traders track performance, analyze strategies, and make data-driven decisions with real-time insights and professional-grade metrics.",
-    image: Piptracker,
-    technologies: ["React", "Node.js", "Firebase", "Express"],
-    status: "LIVE",
-    github: "https://github.com/Ezekiel544/Pip-tracker",
-    demo: "https://pip-tracker-p.vercel.app",
+      "A virtual dollar card used and managed through an app. It allows users to make online purchases, track spending, and manage their finances with ease.",
+    image: Tokicard,
+    technologies: ["React", "TailwindCSS"],
+    status: "BETA",
+    github: "https://tokicardai.com",
+    demo: "https://tokicardai.com",
   },
-  {
+   {
     title: "COVAPADI.WEB",
     description:
       "A gadget protection platform that partners with licensed insurance companies to provide users with simple, accessible, and user-friendly device protection services.",
@@ -46,6 +46,25 @@ const projects = [
     demo: "https://covapadi.vercel.app",
   },
   {
+    title: "FLIBBER.WEB",
+    description: "Flibber's Slotting Mechanism is a system that enables predictable and controlled movement of value between different blockchains, traditional currencies, and digital markets.",
+    image: Flibber,
+    technologies: ["Solidity", "Next.js", "Supabase", "Web3modal"],
+    status: "LIVE",
+    github: "https://flibber.xyz/",
+    demo: "https://flibber.xyz/",
+  },
+  {
+    title: "PIP TRACKER.WEB",
+    description:
+      "A powerful trading analytics platform designed to help traders track performance, analyze strategies, and make data-driven decisions with real-time insights and professional-grade metrics.",
+    image: Piptracker,
+    technologies: ["React", "Node.js", "Firebase", "Express"],
+    status: "LIVE",
+    github: "https://github.com/Ezekiel544/Pip-tracker",
+    demo: "https://pip-tracker-p.vercel.app",
+  },
+  {
     title: "Vetpredict.WEB",
     description:
       "The first prediction market platform on the VeChain blockchain. Designed and built a decentralized application enabling users to create and participate in prediction markets.",
@@ -54,25 +73,6 @@ const projects = [
     status: "LIVE",
     github: "https://github.com/Ezekiel544/vetpredict-frontend",
     demo: "https://vetpredict-frontend.vercel.app",
-  },
-  {
-    title: "Tokicard.APP",
-    description:
-      "A virtual dollar card used and managed through an app. It allows users to make online purchases, track spending, and manage their finances with ease.",
-    image: Tokicard,
-    technologies: ["React", "TailwindCSS"],
-    status: "BETA",
-    github: "https://tokicardai.com",
-    demo: "https://tokicardai.com",
-  },
-  {
-    title: "FLIBBER.WEB",
-    description: "Flibber's Slotting Mechanism is a system that enables predictable and controlled movement of value between different blockchains, traditional currencies, and digital markets.",
-    image: Flibber,
-    technologies: ["Solidity", "Next.js", "Supabase", "Web3modal"],
-    status: "LIVE",
-    github: "https://flibber.xyz/",
-    demo: "https://flibber.xyz/",
   },
   {
     title: "MAX.BOT",
