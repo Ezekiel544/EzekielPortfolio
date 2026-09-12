@@ -24,6 +24,7 @@ const projects = [
     status: "LIVE",
     github: "https://phexara.co.uk",
     demo: "https://phexara.co.uk",
+    priority: true, // ← first visible card, preload it
   },
   {
     title: "Tokicard.APP",
@@ -34,8 +35,9 @@ const projects = [
     status: "BETA",
     github: "https://tokicardai.com",
     demo: "https://tokicardai.com",
+    priority: true, // ← second visible card, preload it too
   },
-   {
+  {
     title: "COVAPADI.WEB",
     description:
       "A gadget protection platform that partners with licensed insurance companies to provide users with simple, accessible, and user-friendly device protection services.",
@@ -44,6 +46,7 @@ const projects = [
     status: "DEVELOPMENT",
     github: "https://covapadi.vercel.app",
     demo: "https://covapadi.vercel.app",
+    priority: false,
   },
   {
     title: "FLIBBER.WEB",
@@ -53,6 +56,7 @@ const projects = [
     status: "LIVE",
     github: "https://flibber.xyz/",
     demo: "https://flibber.xyz/",
+    priority: false,
   },
   {
     title: "PIP TRACKER.WEB",
@@ -63,6 +67,7 @@ const projects = [
     status: "LIVE",
     github: "https://github.com/Ezekiel544/Pip-tracker",
     demo: "https://pip-tracker-p.vercel.app",
+    priority: false,
   },
   {
     title: "Vetpredict.WEB",
@@ -73,6 +78,7 @@ const projects = [
     status: "LIVE",
     github: "https://github.com/Ezekiel544/vetpredict-frontend",
     demo: "https://vetpredict-frontend.vercel.app",
+    priority: false,
   },
   {
     title: "MAX.BOT",
@@ -82,6 +88,7 @@ const projects = [
     status: "LIVE",
     github: "https://github.com/Ezekiel544/tgbot.git",
     demo: "https://t.me/firthtum_bot",
+    priority: false,
   },
 ]
 
@@ -184,7 +191,16 @@ export function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    // ↓ tells browser which size to download at each breakpoint
+                    // cards are ~100vw on mobile, ~50vw on sm+ (2-col grid)
+                    sizes="(max-width: 640px) 100vw, 50vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    // ↓ shows a blurred version of the image while it loads
+                    placeholder="blur"
+                    // ↓ preload only the two cards visible above the fold
+                    priority={project.priority}
+                    // ↓ slight quality reduction saves ~30% file size with no visible difference
+                    quality={85}
                   />
                   <div className="absolute top-2 right-2 sm:top-4 sm:right-4">
                     <span

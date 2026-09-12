@@ -12,6 +12,7 @@ import Africloth from '../img/africloth.png'
 import Olacrrypt from '../img/olacrrypt.png'
 import Pebs from '../img/pebs.png'
 import Openquanta from '../img/openquanta.png'
+
 const projects = [
   {
     title: "PRIME FIT.WEB",
@@ -22,6 +23,7 @@ const projects = [
     status: "LIVE",
     github: "https://github.com/Ezekiel544/primefit.git",
     demo: "https://primefit-kappa.vercel.app",
+    priority: true, // ← first visible card
   },
   {
     title: "COCKTAIL.WEB",
@@ -32,25 +34,28 @@ const projects = [
     status: "LIVE",
     github: "https://cocktailsandtakeaways.vercel.app",
     demo: "https://github.com/Ezekiel544/cocktailsandtakeaways.git",
+    priority: true, // ← second visible card
   },
   {
     title: "AFRICLOTH.WEB",
     description: "A stylish fashion landing page built to present clothing collections, capture attention through bold visuals, and drive product engagement and sales.",
     image: Africloth,
-    technologies: ["React", "Tailwind", "Vercel", "Github"] ,
+    technologies: ["React", "Tailwind", "Vercel", "Github"],
     status: "LIVE",
     github: "https://github.com/Ezekiel544/Africloth.git",
     demo: "https://africloth.vercel.app",
+    priority: false,
   },
   {
     title: "PEBS.WEB",
     description:
       "A landing page built for a Web3 marketer, VC analyst, raid leader, and content clipper to showcase their expertise in community growth, storytelling, and viral content strategy within the blockchain space.",
     image: Pebs,
-    technologies: ["React", "TailwindCSS", "Vercel" , "Github"],
+    technologies: ["React", "TailwindCSS", "Vercel", "Github"],
     status: "LIVE",
     github: "https://github.com/Ezekiel544/Peb.git",
     demo: "https://peb-beta.vercel.app",
+    priority: false,
   },
   {
     title: "OLA-CRRYPT.WEB",
@@ -61,16 +66,18 @@ const projects = [
     status: "LIVE",
     github: "https://github.com/Ezekiel544/olacrrypt.git",
     demo: "https://olacrrypt.vercel.app",
+    priority: false,
   },
   {
     title: "OPENQUANTA.WEB",
     description:
       "Contributed to the landing page of a decentralized research platform enabling NFT-authored publishing and open-market monetization.",
     image: Openquanta,
-    technologies: ["Next.js", "Tailwind", "Vercel", "Github" ],
+    technologies: ["Next.js", "Tailwind", "Vercel", "Github"],
     status: "LIVE",
     github: "https://openquanta.vercel.app",
     demo: "https://openquanta.vercel.app",
+    priority: false,
   },
 ]
 
@@ -120,12 +127,11 @@ export function Landingpages() {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12">
             <h2 className="font-mono font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 sm:mb-4">
-              {/* PROJECTS<span className="text-accent">.</span>DIR */}
-                 Featured Landing Pages
+              Featured Landing Pages
             </h2>
             <div className="w-12 sm:w-16 h-1 bg-accent mx-auto mb-6 sm:mb-8" />
             <p className="font-mono text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed px-2">
-            A collection of landing pages showcasing modern web development, from user interfaces to backend architecture.
+              A collection of landing pages showcasing modern web development, from user interfaces to backend architecture.
             </p>
           </motion.div>
 
@@ -173,7 +179,11 @@ export function Landingpages() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    placeholder="blur"
+                    priority={project.priority}
+                    quality={85}
                   />
                   <div className="absolute top-2 right-2 sm:top-4 sm:right-4">
                     <span
